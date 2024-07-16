@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spinning Circle Loader</title>
+<style>
+  body{
+    background:linear-gradient(lightsalmon,red);
+  }
+  .spinning-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .spinning-circle div {
+    width: 40px;
+    height: 40px;
+    border: 6px solid blue;
+    border-top: 4px solid white;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="spinning-circle">
+    <div></div>
+  </div>
+</body>
+</html>

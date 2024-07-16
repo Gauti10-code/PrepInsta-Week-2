@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pusling Dots Loader</title>
+  <style>
+    body{
+      background: linear-gradient(lightsalmon,lightcoral);
+    }
+    .pulsing-dots{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+    }
+    .dot{
+      width:10px;
+      height:10px;
+      margin:5px;
+      border-radius: 50%;
+      background:blue;
+      animation:pulse 0.4s infinite alternate;
+      
+    }
+    .dot1{
+      animation-delay: 0s;
+    }
+    .dot-2{
+      animation-delay: 0.1s;
+    }
+    .dot-3{
+      animation-delay: 0.2s;
+    }
+    .dot-4{
+      animation-delay: 0.4s;
+    }
+    @keyframes pulse{
+      to{
+        transform:scale(1.5);
+        opacity: 0.5;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="pulsing-dots">
+    <div class="dot dot-1"></div>
+    <div class="dot dot-2"></div>
+    <div class="dot dot-3"></div>
+    <div class="dot dot-4"></div>
+  </div>
+</body>
+</html>

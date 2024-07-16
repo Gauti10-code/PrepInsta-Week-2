@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncing Balls Loader</title>
+  <style>
+    body{
+      background:linear-gradient(red,orange);
+    }
+    .bouncing-balls{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+    }
+    .bouncing-balls div{
+      width:15px;
+      height:15px;
+      margin:3px;
+      border-radius: 50%;
+      background:blue;
+      animation-name:example;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .ball1{
+      animation-delay: 0s;
+    }
+    .ball2{
+      animation-delay: 0.2s;
+    }
+    .ball3{
+      animation-delay: 0.4s;
+    }
+    @keyframes example{
+      to{
+        transform:translateY(100%);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="bouncing-balls">
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+  </div>
+</body>
+</html>
